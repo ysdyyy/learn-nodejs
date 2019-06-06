@@ -18,6 +18,8 @@ const http = require("http");
  * close：
  * checkcontinue:发送较大数据时使用
  * connect：客户端发起connect请求时触发，而发起http请求通常在http代理时出现；如果不坚挺该事件，发起该请求的连接将会关闭。
+ * upgrade:
+ * clientError
  */
 let httpServer = http.createServer();
 
