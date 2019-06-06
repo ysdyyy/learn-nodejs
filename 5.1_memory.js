@@ -82,3 +82,12 @@
  *      表层解决方案是采用消费速度更高的技术
  *      深度解决方案是监控队列的长度，一旦堆积，应当通过监控系统产生报警并通知相关人员。
  */
+
+ /**
+  * 5.5内存泄漏排查
+  * v8-profiler
+  * node-heapdump
+  * nnode-mtrace
+  * dtrace
+  * node-memwatch
+  */
