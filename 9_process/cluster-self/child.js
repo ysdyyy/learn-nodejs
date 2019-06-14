@@ -15,3 +15,11 @@ process.on('message', (message, handle) => {
         });
     }
 });
+
+process.on('uncaughtException', (err) => {
+    console.log(`uncaughtException:`, err);
+    process.send({ act: 'suicide' });
+    server.close(() => {
+        process.exit();
+    });
+})
